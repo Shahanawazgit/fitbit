@@ -3,6 +3,13 @@
   justify-content: space-between;
 }
 
+.hero-blur {
+  width: 22rem;
+  height: 30rem;
+  left: 0;
+}
+
+/* *********** left side ************ */
 .left-h {
   padding: 2rem;
   padding-top: 1.5rem;
@@ -10,10 +17,6 @@
   display: flex;
   gap: 2rem;
   flex-direction: column;
-}
-
-.right-h {
-  flex: 1;
 }
 
 .the-best-ad {
@@ -100,4 +103,91 @@
   background-color: transparent;
   width: 8rem;
   border: 2px solid var(--orange);
+}
+
+/* *********** right side ************ */
+.right-h {
+  flex: 1;
+  position: relative;
+  background-color: var(--orange);
+}
+
+.right-h > .btn {
+  position: absolute;
+  right: 3rem;
+  top: 2rem;
+  color: var(--orange);
+}
+
+.heart-rate {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--darkGray);
+  width: fit-content;
+  padding: 1rem;
+  align-items: flex-start;
+  border-radius: 5px;
+  position: absolute;
+  right: 4rem;
+  top: 7rem;
+}
+
+.heart-rate > img {
+  width: 2rem;
+}
+
+.heart-rate > :nth-child(2) {
+  color: var(--gray);
+}
+
+.heart-rate > :nth-child(3) {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.hero-img {
+  position: absolute;
+  top: 10rem;
+  right: 8rem;
+  width: 23rem;
+}
+
+.hero-img-back {
+  position: absolute;
+  top: 4rem;
+  right: 20rem;
+  z-index: -1;
+  width: 15rem;
+}
+
+.calories {
+  display: flex;
+  gap: 2rem;
+  background-color: var(--caloryCard);
+  border-radius: 5px;
+  padding: 1rem;
+  width: max-content;
+  position: absolute;
+  top: 32rem;
+  right: 28rem;
+}
+
+.calories > img {
+  width: 3rem;
+}
+
+.calories > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.calories > div > :nth-child(1) {
+  color: var(--gray);
+}
+
+.calories > div > :nth-child(2) {
+  color: #fff;
+  font-size: 1.5rem;
 }
