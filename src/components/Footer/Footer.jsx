@@ -1,8 +1,9 @@
 import React from "react";
 import "./Footer.css";
+import { Link } from "react-scroll";
 import github from "../../assets/github.png";
 import linkedIn from "../../assets/linkedin.png";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/fitbit logo.png";
 
 const Footer = () => {
   return (
@@ -26,7 +27,9 @@ const Footer = () => {
           </a>
         </div>
         <div className="logo-f">
-          <img src={logo} alt="logo" />
+          <Link to="home" spy={true} smooth={true}>
+            <img src={logo} alt="logo" className="logo" />
+          </Link>
         </div>
       </div>
 

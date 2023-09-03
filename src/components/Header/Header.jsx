@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Header.css";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/fitbit logo.png";
 import bars from "../../assets/bars.png";
 import { Link } from "react-scroll";
 
@@ -10,7 +10,9 @@ const Header = () => {
 
   return (
     <div className="header">
-      <img src={logo} alt="logo" className="logo" />
+      <Link to="home" spy={true} smooth={true}>
+        <img src={logo} alt="logo" className="logo" />
+      </Link>
 
       {menuOpened === false && mobile === true ? (
         <div

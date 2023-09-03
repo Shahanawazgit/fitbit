@@ -9,27 +9,20 @@
 .footer {
   padding: 1rem 2rem;
   display: flex;
-  flex-direction: column;
-  gap: 4rem;
+  gap: 1rem;
   align-items: center;
   justify-content: center;
-  height: 20rem;
+  height: 10rem;
 }
 
 .social-links {
   display: flex;
-  gap: 4rem;
+  gap: 2rem;
 }
 
 .social-links img {
   width: 2rem;
   height: 2rem;
-}
-
-.logo-f {
-  width: 10rem;
-  display: flex;
-  justify-content: center;
 }
 
 .footer-blur-1 {
