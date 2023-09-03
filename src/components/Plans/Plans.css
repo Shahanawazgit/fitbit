@@ -93,3 +93,10 @@
 .feature > img {
   width: 1rem;
 }
+
+/* *************** Responsive Design *************** */
+@media screen and (max-width: 768px) {
+  .plans {
+    flex-direction: column;
+  }
+}

@@ -19,3 +19,28 @@
   cursor: pointer;
   color: var(--orange);
 }
+
+/* *************** Responsive Design *************** */
+@media screen and (max-width: 650px) {
+  .header > :nth-child(2) {
+    position: fixed;
+    right: 2rem;
+    z-index: 99;
+  }
+
+  .header-menu {
+    flex-direction: column;
+    background-color: var(--appColor);
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 9rem;
+  }
+
+  .header-menu {
+    gap: 1rem;
+  }
+}

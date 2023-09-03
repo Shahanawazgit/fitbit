@@ -11,7 +11,7 @@ const Testimonials = () => {
   const tLength = testimonialsData.length;
 
   return (
-    <div className="testimonials">
+    <div className="testimonials" id="testimonials">
       <div className="left-t">
         <span>Testimonials</span>
         <span className="stroke-text">what they</span>
@@ -38,11 +38,13 @@ const Testimonials = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ ...transition, duration: 2 }}
         ></motion.div>
+
         <motion.div
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ ...transition, duration: 2 }}
         ></motion.div>
+
         <motion.img
           key={selected}
           initial={{ opacity: 0, x: 100 }}

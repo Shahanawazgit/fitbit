@@ -20,11 +20,6 @@
   margin: -10px 0;
 }
 
-.left-j > div {
-  display: flex;
-  gap: 1rem;
-}
-
 .right-j {
   flex: 1 1;
   display: flex;
@@ -53,4 +48,35 @@
 .btn-j {
   background-color: var(--orange);
   color: #fff;
+}
+
+/* *************** Responsive Design *************** */
+@media screen and (max-width: 650px) {
+  .join {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .left-j {
+    font-size: xx-large;
+  }
+
+  .email-container {
+    gap: 1rem;
+    padding: 1rem 1rem;
+  }
+
+  .btn-j {
+    width: max-content;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .left-j {
+    font-size: xx-large;
+  }
+
+  .btn-j {
+    width: max-content;
+  }
 }

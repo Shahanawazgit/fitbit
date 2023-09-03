@@ -5,7 +5,7 @@ import whiteTick from "../../assets/whiteTick.png";
 
 const Plans = () => {
   return (
-    <div className="plans-container">
+    <div className="plans-container" id="plans">
       <div className="blur plans-blur-1"></div>
       <div className="blur plans-blur-2"></div>
       <div className="programs-header">
@@ -24,9 +24,9 @@ const Plans = () => {
 
             <div className="features">
               {plan.features.map((feature, ind) => (
-                <div className="feature">
+                <div className="feature" key={ind}>
                   <img src={whiteTick} alt="whiteTick" />
-                  <span key={ind}>{feature}</span>
+                  <span>{feature}</span>
                 </div>
               ))}
             </div>
